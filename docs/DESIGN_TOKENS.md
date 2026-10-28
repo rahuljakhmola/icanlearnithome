@@ -1,26 +1,47 @@
+# Latest tone and colour revision
+
+Headline: “Students do great in Class 10. Why does Class 11 Physics feel unfamiliar?” The formula sentence has been removed. The introduction now describes building confidence, clarity and enthusiasm and connecting school learning with the reasoning used in competitive exams. These describe the educational aim, not guaranteed exam results. Authentic affiliation logos appear in both opening and people sections. Red draws attention to key ideas; muted blue supports definitions, teaching notes and the expert panel. The six-section sequence and canonical shrine are preserved.
+
+# Current visual revision — 28 October 2026
+
+The owner’s latest six browser comments supersede prior visual details: a quiet Class 10 setup precedes the prominent red Class 11 headline; authentic official-source affiliation logos sit inside the opening; the generated Indian classroom image replaces the cover and carries an HTML wordmark at top right. The curriculum uses one actual Episode 8 projectile question with four mathematical tool groups, named chapters and class placement, replacing the large cross-chapter table. The rate-of-change diagram is narrower with a red shared hub and subdued lower layers. A compact concept pyramid replaces the detailed Knowledge River. The six-section sequence and canonical shrine remain. See ASSET_SOURCES.md for provenance and exact image prompt.
+
+## Previous implementation context (superseded where noted above)
+
 # Visual system
 
-The source is `branding.md`. The redesign preserves the warm science-textbook aesthetic, technical illustration, generous spacing, and visual layout that the owner approved. Descriptive section titles and source-based course content replace generic promotional fragments.
+Reference: owner-supplied `branding.md`. The direction is warm paper, scientific ink, thin rules, Inter typography and generous empty space.
 
 | Role | Value | Use |
 | --- | --- | --- |
-| Paper | #F8F7F2 | Main background |
-| White | #FFFFFF | Learning illustration and selected sections |
-| Ink | #182337 | Headlines, structure, primary text |
-| Slate | #697386 | Secondary metadata |
-| Rule | #E2E0D9 | Fine dividers |
-| Cape red | #D94B40 | Diagram, small brand accents |
-| Action red | #B7352C | Derived darker red for accessible white button text |
-| Cape blue | #7EA6C9 | Teacher accent |
+| Paper | #F8F7F2 | Main warm background |
+| White | #FFFFFF | Question squares and negative space |
+| Ink | #182337 | Headlines, concept names and diagram structure |
+| Slate | #697386 | Secondary labels; use sufficient contrast at rendered size |
+| Readable secondary | #556071 | Darker supporting text where needed |
+| Rule | #E2E0D9 | Borders and dividers |
+| Cape Red | #D94B40 | Cover edge, repeated rate-of-change highlight and focal connection |
+| Action Red | #B7352C | Derived darker action colour for accessible text treatments |
+| Cape Blue | #7EA6C9 | Selective technical input accent |
 
-Inter is self-hosted from the included `src/physics/fonts/` assets, sourced from @fontsource/inter 5.3.0 with the accompanying SIL Open Font License; no Google Fonts network requests are required. Weights 400, 500, 600, and 700 are loaded with font-display: swap. System fonts provide fallback. Georgia is used sparingly for editorial emphasis in the meeting heading, alongside Inter as the primary face.
+Inter is self-hosted in the included fonts folder with its SIL Open Font License. Keep the licensed assets when integrating. Styles are CSS Modules scoped to the page; preserve visible keyboard focus and reduced-motion support.
 
-Layout: 1184px maximum content width; desktop gutters 48px; mobile gutters 20px. Breakpoints at 1100px, 800px, and 480px. Main sections use 94px desktop spacing and 50–64px on smaller screens. Typography reduces for mobile; body text remains readable. All styles are inside a CSS Module. No Tailwind, global reset, icon library, or animation dependency is required.
+## Opening
 
-The original cape artwork is not reconstructed. The approved horizontal logo can be connected through the configuration. Until then the name is plain text. Organization names are text, not borrowed sponsor logos.
+An editorial split pairs the student-experience headline with a typographic textbook-inspired course cover. Identify Indian school educators, Class 10–11, one month and US-based icanlearnit. Collective expertise sits inside the introduction, before the cover on narrow screens. The founder is later. The cover is flat, with a red edge, rather than a mock product screenshot or a new logo.
 
-The graph is code-native SVG with an accessible description and actual robot-exercise data: time 0, 2, 4, 6 s; position 5, 13, 21, 29 m. It represents x(t) = 5 + 4t. Its non-zero intercept is 5 m, and a change of 8 m over 2 s gives a slope and velocity of 4 m/s. Units, ticks, plotted points, slope construction, and text must agree. This is a static reconstruction of course data, not a working course demo or product screenshot. Exact source references and the distinction between this exercise and the separate conceptual question are in EVIDENCE_MAP.md.
+## Rate-of-change diagram
 
-Course topics use the existing column-and-rule visual language rather than a new named teaching framework. Expandable detail is a native disclosure, not hidden functionality. The student and teacher columns and pilot fact sheet are retained to make the offer easy to inspect. Affiliation names remain text and follow the teaching evidence in reading order.
+Three equal white question squares sit across the widest top area. Below each, highlight the same phrase, **rate of change**, while retaining the different physical quantities. Thin neutral branches merge into the shared definition. Cape Red identifies the repeated idea and the convergence. The lower conceptual layers are narrower and centred.
 
-Use the native FAQ disclosure and document anchors as implemented. The component has a keyboard skip link, visible focus, reduced-motion rules, semantic landmarks, and text alternatives for the diagram and optional assets.
+Keep the core explanation readable without interaction. On mobile, arrange three compact question nodes as a connected triangle feeding the shared concept and lower foundations. Both responsive layouts use one continuous SVG network. Do not require horizontal scrolling to understand the argument. Any expandable detailed question preserves accessible reading order.
+
+## Course graph
+
+Use an abridged view of the real lesson relationships. It explains connections, not a new branded framework. The full episode outline can expand below. The selected diagram replaces earlier robot, slope, two-ball and motion-explorer illustrations.
+
+## Expertise and invitation
+
+Use accurate affiliation names as text, not sponsor logos. Include specific expert applications only when supplied. Founder copy remains compact and supporting. Keep the closing invitation as a restrained link with a short meeting line, not a dominant repeated booking panel.
+
+The original cape geometry must not be redrawn or extracted from the raster brand sheet. Configure original approved logo artwork when supplied; until then retain the text fallback. Optional portraits require current supplied assets.

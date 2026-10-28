@@ -1,54 +1,28 @@
-# Verification report — school outreach redesign
+# Current revision verification — 28 October 2026
 
-Reviewed 27 October 2026. This is a local developer handoff. No production website was changed or published.
+- Production webpack build passed, including TypeScript and static export.
+- Inspected the 1168px opening, generated classroom image, correct upper-right wordmark, authentic-logo strip, concise kinematics explanation, reduced rate-of-change diagram and concept pyramid.
+- Responsive checks at 390px and 320px: no horizontal overflow. All seven image assets load.
+- The page retains six main sections and the understated invitation. Native disclosure/anchor structure is retained from the earlier checked revision.
+- The original approved shrine remains unchanged in MESSAGE_SOURCE.md.
+- The classroom scene is labelled AI-generated. Asset provenance, prompt and factual source boundaries are in ASSET_SOURCES.md.
+- The illustrative projectile question is from the manuscript; its direct trigonometry/components calculation is distinguished from the broader calculus foundations of kinematics.
 
-## Build and hosting checks
+The real booking URL and canonical URL remain intentionally empty. Set them and run preflight before publication. Live calendar booking has not been tested. Logos retain their owners’ rights and require review against their usage terms for production. No outcome guarantees, invented mentors, production deployment or school demo have been added.
 
-- Root production export: Next.js 16.4.3 webpack build and built-in TypeScript checks pass with React 19.3.1.
-- Separate `/physics/` basePath production build passes. It was served and inspected at `/physics/`: stylesheet URLs correctly use `/physics/_next/`, Inter loads, the source table renders, and there is no horizontal overflow.
-- The included `out/` is the root export. The subpath build is a verification artifact, not a second public page.
-- The source is reusable React with a CSS Module and local font assets; public course data is in `src/physics/course-content.ts`.
+## Tone and colour follow-up
 
-## Browser and interaction checks
+Production build passed after the final copy/CSS changes. Checked the people-section logo panel and exact headline in the browser at 1168px, then responsive widths390px and320px. All13 image elements load; no horizontal overflow. Updated previews and packet include this revision.
 
-- Reviewed desktop at 1158px, tablet at 768px, mobile at 390px, and narrow mobile at 320px. No horizontal overflow was observed.
-- Reviewed full desktop page, mobile opening, lesson table, and expanded course outline. Graph, table, headings, and controls remain intact.
-- Exactly one H1, semantic landmarks, accessible graph description, and row headers/caption for the position table.
-- All internal anchor targets exist. The example link scrolls to the lesson; the hero meeting CTA scrolls to the meeting section while the calendar is unset.
-- Course outline opens on click, exposes eight episodes and a separate capstone, and closes using Enter. Expanded layout checked on desktop and tablet.
-- School-participation FAQ opens and closes through native disclosure controls.
-- Keyboard Shift+Tab from the brand link reaches the skip link with a visible outline.
-- Pending calendar state shows the disabled final button and visible explanatory copy.
-- No browser console warnings or errors were observed in the reviewed flows.
-- Desktop, mobile, opening, lesson, and expanded-outline captures are included under `previews/`.
-- The existing color values were preserved. Previously checked text pairs remain: white/action red 5.90:1; body slate/paper 5.94:1; secondary slate/white 4.78:1; ink/paper 14.67:1.
+## Expert profiles follow-up
 
-## Content and illustration checks
+- Added eight entries with sourced short biographies and professional/institutional profile links; founder remains last within the existing people section. Six main page sections remain.
+- Five authentic portraits load. Shikha Bhadoria, Aaron Alphonsus and Jagdish Mohapatra use initials because no matched public headshot was retrieved. Aditya’s low-resolution university portrait is kept at avatar size.
+- Aaron’s owner-confirmed LinkedIn profile supports the Spotify, WPI, teaching and research details. Aditya’s current INL affiliation is distinguished from his WPI doctorate.
+- Final production webpack build and TypeScript passed. Browser checked at desktop, 390px and 320px; no horizontal overflow. All 18 image elements load.
+- Saved expert-specific desktop and mobile previews. The approved message and earlier course diagrams remain unchanged.
+- Expert source notes and pending portraits are recorded in EXPERTS.md. Booking and canonical URLs remain unset.
 
-- Source data is time 0, 2, 4, 6 s and position 5, 13, 21, 29 m. The hero graph and table use the same imported array.
-- The graph passes through the 5 m starting position and 29 m endpoint, with a rise of 8 m for a 2 s interval and slope 4 m/s. The rendered accessible description matches.
-- The worked-example calculations use 13 - 5 = 8 m; 2 - 0 = 2 s; 8 / 2 = 4 m/s.
-- The conceptual meaning question is separately labelled; it is not passed off as part of a contiguous robot-source extract.
-- Episode summaries and separate capstone were compared with the manuscript. No new five-stage framework, weekly schedule, or complete-syllabus promise was added.
-- The source and email provenance received an independent read-only audit, with no material factual issues found.
-- The ten editorial checks are recorded in `EDITORIAL_REVIEW.md`; claim origins are in `EVIDENCE_MAP.md`.
-- No source manuscript, private group link, answer-key file, old biography, invented testimonial, measured outcome, or mock dashboard is included as visitor-facing content.
+## Approved one-line biographies
 
-## Expected launch preflight result
-
-`pnpm preflight` exits 1 because `bookingUrl` and `canonicalUrl` are intentionally blank. It also notes that the approved logo artwork has not been supplied separately. This is expected, not a production-ready booking configuration. Add the real Google Calendar appointment booking URL and final page URL, then rebuild and rerun preflight before outreach.
-
-## Limits
-
-- A real calendar URL was not supplied; appointment availability, booking form, and completed meeting creation remain unverified.
-- Browser checks used the Codex in-app browser, rather than a full device/browser matrix. This is a focused manual accessibility review, not a certification.
-- The optional original logo and current founder portrait can be connected through configuration. Plain-text branding is used in the preview.
-- Founder/mentor and platform claims retain owner-email provenance; the course manuscript does not independently validate those statements.
-- No analytics, lead collection, backend, accounts, course demo, or production hosting was added.
-
-## Developer launch checks
-
-1. Copy the complete `src/physics/` directory, including `course-content.ts` and local fonts, into the existing React/Next.js route, or use the standalone reference app.
-2. Supply the real Google Calendar appointment booking URL, final canonical URL, and optional original logo/portrait.
-3. Build for the chosen route and run preflight; test the real calendar experience and hosted asset paths.
-4. Review current participation details and copy with the owner before outreach.
+Replaced all eight descriptions with the owner-approved student-facing one-liners. Production build and TypeScript passed; browser confirmed the text, eight profiles and 390px layout without horizontal overflow. Desktop/mobile expert previews refreshed. No new portrait was confidently matched through the Google Scholar search.

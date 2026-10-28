@@ -1,199 +1,89 @@
-# Landing page copy — school outreach revision
+# Latest tone and colour revision
 
-FOR SCHOOLS · CLASS 10 → 11
+Headline: “Students do great in Class 10. Why does Class 11 Physics feel unfamiliar?” The formula sentence has been removed. The introduction now describes building confidence, clarity and enthusiasm and connecting school learning with the reasoning used in competitive exams. These describe the educational aim, not guaranteed exam results. Authentic affiliation logos appear in both opening and people sections. Red draws attention to key ideas; muted blue supports definitions, teaching notes and the expert panel. The six-section sequence and canonical shrine are preserved.
 
-# A stronger start to Class 11 Physics.
+# Current visual revision — 28 October 2026
 
-A one-month Physics bridge course for students moving from Class 10 to Class 11.
+The owner’s latest six browser comments supersede prior visual details: a quiet Class 10 setup precedes the prominent red Class 11 headline; authentic official-source affiliation logos sit inside the opening; the generated Indian classroom image replaces the cover and carries an HTML wordmark at top right. The curriculum uses one actual Episode 8 projectile question with four mathematical tool groups, named chapters and class placement, replacing the large cross-chapter table. The rate-of-change diagram is narrower with a red shared hub and subdued lower layers. A compact concept pyramid replaces the detailed Knowledge River. The six-section sequence and canonical shrine remain. See ASSET_SOURCES.md for provenance and exact image prompt.
 
-We are inviting school leaders and Physics teachers to review the approach and discuss a no-cost school pilot.
+## Previous implementation context (superseded where noted above)
 
-The robot’s position changes by 8 metres in each 2-second interval. Students calculate velocity, then connect it to the graph’s slope.
+# Page content hierarchy
 
-01 — HOW A LESSON DEVELOPS
+Canonical wording and argument: [MESSAGE_SOURCE.md](MESSAGE_SOURCE.md). This file records the approved webpage structure; editable source copy lives in `src/physics/PhysicsLanding.tsx` and its diagram/content components.
 
-## Connecting a table, a graph, and velocity.
+## 1. Opening
 
-Many students enter Class 11 knowing formulas but struggle to apply them to unfamiliar problems. This exercise asks them to connect a calculation with its graph and physical meaning.
+**Audience:** For Indian school leaders and Physics educators supporting the Class 10–11 transition.
 
-> “What does 4 m/s mean here?”
+**Headline:** Strong Class 10 results. Class 11 Physics can still feel unfamiliar.
 
-“Position changes by 4 m for every second.”
+A familiar formula can feel difficult to apply when the question changes. A one-month Physics bridge course from US-based icanlearnit helps students entering Class 11 connect mathematics with Physics.
 
-A robot moves along a straight track. Its position is recorded every two seconds.
+The current opening reduces the switching between “they” and “we” while preserving the shrine's transition problem, offer and intended understanding. This is a later owner-directed copy refinement; the canonical MESSAGE_SOURCE remains unchanged.
 
-| Time (s) | 0 | 2 | 4 | 6 |
-| --- | --- | --- | --- | --- |
-| Position (m) | 5 | 13 | 21 | 29 |
+**Expertise:** Mentorship from Indian professionals associated with the Max Planck Institute for Nuclear Physics, Amazon, Google, Meta, Spotify and NVIDIA. This statement is within the opening copy, above the course cover in mobile reading order.
 
-- Find the change in position. 13 − 5 = 8 m
+**Course cover:** icanlearnit · US-based ed-tech startup · Physics Bridge Course · Class 10 → 11 · One month · Connecting mathematics and Physics.
 
-- Find the time interval. 2 − 0 = 2 s
+## 2. Curriculum connection
 
-- Calculate velocity over the interval. 8 ÷ 2 = 4 m/s
+**Headline:** Learning the Physics while still getting to know the mathematics.
 
-- Calculate graph slope and compare. The same rate of change.
+`CurriculumMap.tsx` groups named Mathematics and Physics chapters around five shared foundations:
 
-The questions work through each step before asking students how slope and velocity are connected.
+| Foundation | Mathematics chapters | Physics chapters |
+| --- | --- | --- |
+| Functions and graphs | XI: Relations & Functions; Straight Lines | XI: Motion in a Straight Line; Oscillations |
+| Angles and trigonometry | XI: Trigonometric Functions | XI: Motion in a Plane; Oscillations; Waves. XII: Electromagnetic Induction |
+| Rate of change | XI: Limits and Derivatives. XII: Continuity and Differentiability; Applications of Derivatives | XI: Motion in a Straight Line; Oscillations. XII: Electric Charges and Fields; Electromagnetic Induction |
+| Sums and integration | XI: Sequence and Series. XII: Integrals; Application of the Integrals | XI: Motion in a Straight Line; Work, Energy and Power; System of Particles and Rotational Motion; Gravitation. XII: Electric Charges and Fields |
+| Vectors and components | XII: Vectors | XI: Motion in a Plane; Laws of Motion. XII: Electric Charges and Fields |
 
-02 — COURSE CONTENT AND PRACTICE
+The ten named Mathematics chapters are connected to selected course concepts and capstone applications. This is an inferred course-to-chapter map, not an official CBSE cross-subject map or a full-coverage claim. Physics introduces its mathematical tools too; classroom order varies.
 
-## What students work on.
+## 3. Shared foundations
 
-Units and measurement, vectors, graphs, functions, differentiation, integration, trigonometry, and two-dimensional motion.
+**Headline:** Different chapters. The same underlying idea.
 
-### Worked examples
+One connected SVG contains three different-looking capstone question squares: changing rocket momentum, SHM and a rotating loop in a magnetic field. The rocket question asks for rate of change of momentum rather than reproducing the manuscript's variable-mass net-force claim.
 
-Calculations are developed step by step, with questions about the quantities and relationships involved.
+Their explanations repeat and highlight **rate of change** for different physical quantities. The branches converge into:
 
-### Independent questions
+**Rate of change tells us how one quantity changes with respect to another.**
 
-Students apply the ideas themselves through numerical problems, predictions, and chapter assessments.
+Connected nodes then trace down through differentiation, functions, change, measurement and units. Both desktop and mobile variants retain one visible network. These are dependencies supporting the shared idea, not a newly invented teaching framework or a chronological course order.
 
-### Checks of meaning
+## 4. Course journey
 
-Questions ask why a method works, what a result means, and how it relates to the physical situation.
+**Headline:** Our course brings these ideas together through physical questions.
 
-### View the course outline Eight episodes and a capstone chapter +
+A unified dot-and-edge SVG graph abridges real paths from the owner's Knowledge River. Solid paths show lesson progression; dashed paths show cross-topic connections. Intermediate lessons are omitted with that simplification stated in the caption. It is a connected graph, rather than separate topic lists. The later vector episode is described as a manuscript continuation. Worked examples, guided questions and independent practice help students build reasoning. Diagnostic assessments identify gaps; the supporting platform organizes coursework and helps teachers follow progress.
 
-### Episode 1: What exactly is a unit or measurement?
+The full eight-episode outline is optional expanded detail. Episode titles and summaries preserve the source's structure. No slope/robot activity, two-ball demonstration or generic metaphor replaces the capstone explanation.
 
-Measurement, units, metric prefixes, order of operations, and combining units.
+## 5. Purpose and people
 
-### Episode 2: Vectors are all around you
+**Headline:** See what these foundations make possible.
 
-Number lines, position, direction of change, angles, radians, and time.
+Professionals share actual applications from Physics research, AI and technology, helping students see why the foundations are worth studying. Describe this owner-supplied contribution; specific expert projects appear only when supplied and confirmed.
 
-### Episode 3: It all comes together
+Affiliations describe individual professionals. Keep founder Rahul Jakhmola's paragraph supporting and later: Physics teaching, learning-system design for Maruti Suzuki and Amazon's global teams, and AI-in-education research in Texas, USA.
 
-Displacement, graphs, slope, rates of change, velocity, and recording a rocket’s motion.
+## 6. Confidence
 
-### Episode 4: Pattern finding
+**Headline:** Stronger understanding to bring into school lessons.
 
-Linear and quadratic patterns in equations, graphs, and tables; functions and motion.
+Our aim is stronger understanding, greater confidence and less dependence on additional tuition. We invite educators to help shape the course around students' and teachers' needs through a no-cost school pilot.
 
-### Episode 5: Exploring differentiation
+**Invitation:** Be part of shaping the course →
 
-Derivatives from first principles, then position, velocity, and acceleration.
+**Supporting line:** A 30-minute conversation with our team.
 
-### Episode 6: Divide and Rule — Part 1
+Keep the invitation understated. The main page establishes the course. With booking unset, retain the visible pending-calendar state and the outreach email reply fallback.
 
-Sequences, sums, displacement from velocity, and building area with rectangles.
 
-### Episode 7: Divide and Rule — Part 2
+Latest people-section addition: see EXPERTS.md for all eight current biographies, profile links and portrait source notes. These replace the earlier founder-only profile treatment.
 
-Riemann sums, definite integrals, unit-circle trigonometry, and sine and cosine in motion.
 
-### Episode 8: Two Dimensional Vectors
-
-Coordinates, independent directions, projectile motion, and choosing useful axes.
-
-### Capstone applications
-
-A separate chapter applies these tools to further Physics problems, including momentum, work and energy, gravitation, and electromagnetism.
-
-ANOTHER COURSE ACTIVITY Students watch a rocket launch, record its altitude at 20-second intervals, and plot its motion.
-
-03 — AN INVITATION TO SCHOOLS
-
-## The one-month school pilot.
-
-We would value your feedback on the learning approach and how the course could support your school.
-
-Our aim is to strengthen learning at school so students can build confidence with less dependence on additional tuition and less pressure on their study time.
-
-**Students**
-
-Moving from Class 10 to Class 11
-
-**Duration**
-
-One month
-
-**Cost**
-
-No cost to participating schools
-
-**Feedback on**
-
-The course and its supporting platform
-
-We’ll discuss curriculum fit, delivery, student commitment, and teacher involvement in the introductory conversation.
-
-### Coursework and practice
-
-- Diagnostic assessments.
-
-- Guided problem-solving and expert interactions.
-
-- Organized access to coursework and practice.
-
-### Visibility into progress
-
-- Monitor individual student progress.
-
-- Identify learning gaps that need attention.
-
-- Track homework completion within the course.
-
-04 — FOUNDER AND MENTORS
-
-## Who is behind icanlearnit.
-
-icanlearnit is a US-based ed-tech startup focused on making difficult Physics understandable through connections students already know.
-
-### Rahul Jakhmola
-
-Rahul has designed learning systems for Maruti Suzuki and Amazon’s global teams and researches AI in education in Texas, USA.
-
-The course features mentorship from Indian professionals associated with:
-
-- Max Planck Institute for Nuclear Physics
-
-- Amazon
-
-- Google
-
-- Meta
-
-- Spotify
-
-- NVIDIA
-
-05 — PRACTICAL QUESTIONS
-
-## Questions about the pilot.
-
-### Which students is the course for? +
-
-Students moving from Class 10 to Class 11. The course develops the mathematical ideas used in Physics, including units, vectors, graphs, and calculus, with worked examples and questions for practice.
-
-### Is this a full Class 11–12 or JEE/NEET syllabus course? +
-
-This invitation is for the Physics bridge course. Its focus is on foundations and their application. The capstone chapter uses examples from later Physics topics to apply those tools; it is not a promise of complete syllabus coverage.
-
-### How long is the school pilot, and what does it cost? +
-
-The school pilot runs for one month and is offered at no cost to participating schools. We would discuss delivery arrangements and student commitment with your school before agreeing on participation.
-
-### What would the school and its teachers need to do? +
-
-The introductory conversation is where we would discuss curriculum fit, delivery, student commitment, and teacher involvement. Your feedback would help us refine the course and supporting platform for students and teachers.
-
-### What will the 30-minute conversation cover? +
-
-We will introduce the course, hear your professional feedback, and discuss whether the pilot could be useful for your school. Booking a conversation does not commit the school to participating.
-
-06 — A 30-MINUTE CONVERSATION
-
-## Share your perspective on the course.
-
-Given your experience in education, your input could help us refine the course and its supporting platform for students and teachers.
-
-- An introduction to the course.
-
-- Your professional feedback.
-
-- A discussion of the pilot’s fit for your school.
-
-Our meeting calendar will be available here soon.
+Affiliation introduction (hero and people): 🇮🇳 Leading Indian scientists and engineers across the globe, helping the next generation back home.

@@ -1,15 +1,15 @@
 # Developer handoff
 
-The redesigned page is built. Start with `README.md` for integration instructions. It preserves the visual style and layout, uses a source-based teaching example and course outline, and focuses on a school feedback meeting.
+Start with `README.md` for integration instructions. The current revision follows the exact owner-approved message and six-section structure: opening/course cover, curriculum connection, three rate-of-change capstones, course journey, purpose/people and confidence.
 
-**Fastest route:** Copy the entire `src/physics/` folder into the existing React/Next.js application and render `PhysicsLanding` from the site's Physics route. The component includes its CSS Module and licensed local fonts. The supplied `app/page.tsx` shows a complete Next.js metadata example.
+**Integrate:** Copy the entire `src/physics/` folder into the existing React/Next.js application and render `PhysicsLanding` from the desired route. Include `RateOfChange.tsx`, `CourseConnections.tsx`, all CSS Modules and licensed local fonts. The supplied `app/page.tsx` demonstrates metadata integration. Keep the site's existing root layout.
 
-**Before outreach:** Set the actual public Google Calendar appointment booking URL and final canonical URL in `src/physics/site-config.ts`, then rebuild. Booking is intentionally unavailable until connected. No credentials or server integration are required.
+**Before outreach:** Set the actual public Google Calendar appointment booking URL and final canonical URL in `src/physics/site-config.ts`, then rebuild. Booking remains unavailable until connected. Configuration contains public values only; no credentials or server integration are required.
 
-**Review:** `previews/desktop.jpg` and `previews/mobile.jpg` show the full page; `*-opening.jpg` show the opening view. `docs/CONTENT.md` contains editable copy. `docs/CONTENT_NOTES.md` lists factual boundaries and missing assets. `docs/QA_REPORT.md` records tests and limits.
+**Message:** `docs/MESSAGE_SOURCE.md` preserves the approved “shrine” verbatim. `docs/NARRATIVE_DESIGN.md` records the six sections, exact scope and restrained CTA. `docs/CONTENT.md` records the content hierarchy.
 
-**Content evidence:** `docs/EVIDENCE_MAP.md` connects teaching claims to the source material and separates them from owner-supplied business and platform statements. `docs/EDITORIAL_REVIEW.md` records the ten copy checks. These are internal handoff documents. Course data and FAQ text are editable in `src/physics/course-content.ts`.
+**Evidence:** `docs/EVIDENCE_MAP.md` traces concepts and claims. `docs/CONTENT_NOTES.md` distinguishes owner-supplied business statements from manuscript evidence. The rocket example is adapted to ask for rate of change of momentum, avoiding the manuscript's variable-mass force ambiguity. The full course and private links are excluded.
 
-**Standalone alternative:** `pnpm build` generates the static `out/` preview. Generated output is not committed to this repository. Use the source instructions to rebuild it for `/physics/` or a subdomain after configuration. Do not publish the pending-booking preview as though it accepts meetings.
+**Validation:** `docs/QA_REPORT.md` records checks and limitations for the packaged revision. Review the actual page after integration, especially the diagram reading order on mobile, keyboard access, base path and booking destination.
 
-No production website was changed, no site was published, and no school demo was built.
+**Standalone:** `out/` is the compiled preview with booking unset. Rebuild for the final route/subdomain after configuration. Deploy the contents of that directory only when configured and reviewed.

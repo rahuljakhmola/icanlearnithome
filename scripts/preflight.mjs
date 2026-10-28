@@ -13,7 +13,7 @@ for (const name of ["bookingUrl", "canonicalUrl"]) {
     failed = true;
   }
 }
-for (const file of ["../src/physics/PhysicsLanding.tsx", "../src/physics/course-content.ts", "../src/physics/physics.module.css", "../app/page.tsx", "../README.md"]) {
+for (const file of ["../src/physics/PhysicsLanding.tsx", "../src/physics/course-content.ts", "../src/physics/CurriculumMap.tsx", "../src/physics/RateOfChange.tsx", "../src/physics/CourseConnections.tsx", "../src/physics/physics.module.css", "../app/page.tsx", "../README.md"]) {
   if (!existsSync(new URL(file, import.meta.url))) {
     console.error(`MISSING: ${file}`);
     failed = true;

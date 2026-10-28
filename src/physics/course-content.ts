@@ -10,19 +10,14 @@ export const courseEpisodes = [
   { title: "Episode 8: Two Dimensional Vectors", topics: "Coordinates, independent directions, projectile motion, and choosing useful axes." },
 ] as const;
 
-export const positionData = [
-  { time: 0, position: 5 }, { time: 2, position: 13 },
-  { time: 4, position: 21 }, { time: 6, position: 29 },
-] as const;
-
 export const schoolFaqs = [
   {
     question: "Which students is the course for?",
     answer: "Students moving from Class 10 to Class 11. The course develops the mathematical ideas used in Physics, including units, vectors, graphs, and calculus, with worked examples and questions for practice.",
   },
   {
-    question: "Is this a full Class 11–12 or JEE/NEET syllabus course?",
-    answer: "This invitation is for the Physics bridge course. Its focus is on foundations and their application. The capstone chapter uses examples from later Physics topics to apply those tools; it is not a promise of complete syllabus coverage.",
+    question: "What does the bridge course cover?",
+    answer: "This invitation is for the Physics bridge course. Its focus is on foundations and their application. The capstone chapter brings those tools together in applications from later Physics topics.",
   },
   {
     question: "How long is the school pilot, and what does it cost?",
@@ -34,6 +29,6 @@ export const schoolFaqs = [
   },
   {
     question: "What will the 30-minute conversation cover?",
-    answer: "We will introduce the course, hear your professional feedback, and discuss whether the pilot could be useful for your school. Booking a conversation does not commit the school to participating.",
+    answer: "We will introduce the course, hear your professional feedback, and discuss whether the pilot could be useful for your school.",
   },
 ] as const;

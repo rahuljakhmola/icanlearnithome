@@ -1,49 +1,57 @@
-# Evidence map for the school-outreach page
+# Current visual revision — 28 October 2026
 
-This internal handoff document records provenance. A source reference means the wording can be traced to that source; it does not mean employment, product readiness, mentorship, or outcomes were independently verified.
+The owner’s latest six browser comments supersede prior visual details: a quiet Class 10 setup precedes the prominent red Class 11 headline; authentic official-source affiliation logos sit inside the opening; the generated Indian classroom image replaces the cover and carries an HTML wordmark at top right. The curriculum uses one actual Episode 8 projectile question with four mathematical tool groups, named chapters and class placement, replacing the large cross-chapter table. The rate-of-change diagram is narrower with a red shared hub and subdued lower layers. A compact concept pyramid replaces the detailed Knowledge River. The six-section sequence and canonical shrine remain. See ASSET_SOURCES.md for provenance and exact image prompt.
 
-## Original materials
+## Previous implementation context (superseded where noted above)
 
-- Owner-approved outreach email: email v1.md.
-- Supplied course: physics-jee-foundations.study.md. Line numbers below refer to the supplied original file.
-- Brand reference: branding.md.
-- Approved content plan: SCHOOL_OUTREACH_PAGE_PLAN.md.
+# Evidence map
 
-These links identify the owner's local originals. The originals are not bundled in the public source or exported site. The packet includes only the limited teaching example and factual summaries needed for the page. It contains no private group links, source-course download, or unselected course media.
+This internal handoff document identifies provenance. Owner-supplied company, product and affiliation statements are not independently verified by a course reference. The original manuscript, private links and earlier campaign drafts are excluded from the packet.
 
-## Claim-to-source map
+## Source materials
 
-| Public content | Exact origin | Treatment and limit |
+- `email v1.md`: owner-approved school-outreach email.
+- `physics-jee-foundations.study.md`: supplied course manuscript. Line references below use the supplied version; stable study-section identifiers are also provided where relevant.
+- `branding.md`: owner-supplied brand guide.
+- [MESSAGE_SOURCE.md](MESSAGE_SOURCE.md): exact approved message (“shrine”), bundled here.
+- [Knowledge River](https://github.com/rahuljakhmola/graphs/blob/main/icanlearnit_foundations.html): course connection graph supplied by owner.
+
+## Claims and diagrams
+
+| Page content | Source | Boundary |
 | --- | --- | --- |
-| US-based ed-tech startup | Owner email, line 5 | Owner-provided company identity, preserved rather than silently weakened. |
-| One-month Physics bridge course for students moving from Class 10 to Class 11 | Owner email, line 5; brand guide, lines 36 and 40 | Current offer, not an inference from archived batch notes. |
-| Difficulty applying familiar formulas to unfamiliar problems; aim of stronger school learning and less dependence on outside support | Owner email, line 7 | Purpose and problem framing, not measured or guaranteed results. |
-| Diagnostic assessments, guided problem-solving, expert interactions | Owner email, line 9 | Current owner-provided offer. The manuscript supports problem-solving examples, not formal diagnostic validity or mentor attendance. |
-| Organized coursework/practice; teacher progress visibility, learning-gap identification, homework tracking | Owner email, line 9 | Owner-provided platform functions. No new automation, real-time analytics, screenshots, or integration claims. |
-| Robot position table | Course, lines 7926–7937 | Exact data: 0, 2, 4, 6 s map to 5, 13, 21, 29 m. Static reconstruction rather than a continuous screenshot. |
-| Displacement 8 m, interval 2 s, velocity 4 m/s | Course, lines 7939–8014 | Graph must preserve initial position 5 m. Derived relation x = 5 + 4t describes these supplied values. |
-| Slope and velocity are the same rate of change on a position–time graph | Course, lines 8016–8065 | Supports the worked-example sequence and explanation. Not evidence of student gains. |
-| Meaning check: what does 4 m/s mean? | Course, lines 12181–12201; question at 12194 | A later, separate example: an object moves 3→11 m over 2 s. Display as another course question, not as the next question in the robot passage. Correct interpretation: position changes by 4 m each second. |
-| Rocket observation and graphing activity | Course, lines 5518–5550 | Students record time, altitude, and speed at 20-second intervals, then plot altitude. No invented telemetry values or redistributed video. |
-| Familiar algebra used to explain compatible physical units | Course, lines 3539–3687 | Evidence for a factual description of connecting known mathematics with physical meaning. |
-| Course-topic summaries | Course: units 3539, displacement vectors 5017, slope 5148, rate 5331, functions 6437, instantaneous slope 6702, velocity function 8557, accumulation/integration 14128, rectangle approximation 14664, trigonometry 18377, projectile motion 23223 | Topic outline, not a newly invented framework, dated timetable, or comprehensive syllabus promise. |
-| Eight episode titles and separate capstone chapter | Course chapter metadata: 40, 326, 554, 791, 1086, 1264, 1558, 1973; capstone at 2170 | Titles preserve course naming with typographic punctuation normalized. The chapter count is source-based, not an invented one-month schedule. |
-| Capstone applications in momentum, work and energy, gravitation, and electromagnetism | Course chapter metadata: 2181, 2206, 2281, 2306, 2331 | Included only within expanded course detail, with an explicit FAQ limiting full-syllabus expectations. |
-| Founder: learning systems for Maruti Suzuki and Amazon's global teams; AI-in-education research in Texas, USA | Owner email, line 11 | Latest owner biography. Does not import old Boston/resume claims or imply an unprovided university affiliation. |
-| Mentorship from Indian professionals associated with the Max Planck Institute for Nuclear Physics, Amazon, Google, Meta, Spotify, NVIDIA | Owner email, line 11 | Individual professional affiliations, not institutional sponsorship or company endorsement. No fabricated named mentors. |
-| No-cost school pilot and educator feedback | Owner email, line 13 | Cost statement applies to the offered pilot. Feedback is sought on the course and supporting platform. |
-| 30-minute feedback conversation about the course and pilot | Owner email, line 15 | Immediate goal; no enrolment requirement or presumed pilot commitment. Website booking adapts the email reply CTA by the owner's instruction. |
-| Warm paper/ink/red, Inter, original cape only, brand line | Brand guide, lines 68–100, brand line at 54 | Preserves approved visual language. Text fallback is used until original logo artwork is supplied. |
+| US-based startup; one-month Class 10–11 bridge course | Owner email, line 5; canonical message | Current offer. Archived batch details are not operational commitments. |
+| Transition difficulty; stronger school learning and less tuition dependence | Email, line 7; canonical message; later owner direction | Student experience and intended benefit, not prevalence statistics or outcome guarantees. |
+| Diagnostics, practice, expert interactions and teacher visibility | Email, line 9 | Owner-supplied capabilities; no added automation or formal diagnostic-validity claim. |
+| Collective affiliations and expert role | Email, line 11; explicit owner discussion; canonical message | Individual professionals, not institutional endorsement. No invented mentor/project case. |
+| Founder teaching, learning design and Texas AI-in-education research | Canonical message; email, line 11 | Supporting profile after the collective contribution; no imported old biography. |
+| No-cost pilot; 30-minute feedback conversation | Email, lines 13–15; owner instruction | A meeting and exploratory pilot invitation, not enrolment or an assumed commitment. |
+| Rate of change as a recurring language in Physics | Course lines 2883–2901, `lesson-5-page-6` | This introduces the shared idea. It is not evidence that every Physics problem has one method. |
+| “Rate of change tells us how one quantity changes with respect to another” | Course lines 5331–5340, `lesson-5-2` sequence | Exact conceptual definition used beneath the capstone branches. |
+| Position → velocity → acceleration | Course lines 12106–12145, `lesson-1-7-page-1` | Each arrow represents rate of change with respect to time. |
+| Rocket changing momentum | Course lines 24180–24305, `capstone-1-page-1` through `capstone-1-page-3` | Page adapts the question to ask for rate of change of momentum. The source conflates this derivative with net force for a variable-mass rocket; the public diagram makes no force/thrust claim and publishes no source force result. |
+| SHM velocity and acceleration | Course lines 24897–25018, `capstone-8-page-1` through `capstone-8-page-3` | Successive derivatives of supplied displacement; connection is rate of change. |
+| Rotating-loop induction | Course lines 24815–24894, `capstone-7-page-1` through `capstone-7-page-3` | Faraday's law uses negative rate of change of magnetic flux. Preserve the sign relationship in any equation or detailed explanation. |
+| Lower foundation layers | Course chapters on measurement/units, change, functions and differentiation | Conceptual dependency map, not a claim that every displayed edge exists verbatim in the Knowledge River. |
+| Eight episodes and separate capstones | Course metadata at lines 40, 326, 554, 791, 1086, 1264, 1558, 1973 and 2170 | Source structure, not a week-by-week timetable. |
+| Abridged course graph | Knowledge River; manuscript, including later two-dimensional vectors | Graph's actual branches are the reference. Manuscript supports later content absent from the older graph. Clearly distinguish a simplified explanatory view from a formal prerequisite system. |
+| Five-foundation chapter map | Official CBSE Physics and Mathematics syllabi, course manuscript and capstones | Chapter placements are verified; cross-subject connections are our course-based interpretation. No fixed timetable, board approval or complete-coverage claim. Physics introduces these tools too. |
+| Paper/Ink/Red, Inter, original logo rules | Brand guide | Text fallback until original artwork is supplied. Typography cover is a course presentation, not a screenshot. |
 
-## Context, not claims to add
+## Curriculum sources and exact scope
 
-The approved plan considered the [CBSE 2026–27 Physics curriculum](https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Physics_SecP2_2026-27.pdf), especially PDF pages 2–3 for Class XI structure and kinematics. This informs the relevance review. It does not establish board approval, accreditation, exhaustive coverage, or relevance to every Indian school's board.
+- [CBSE Physics 2026–27](https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Physics_SecP2_2026-27.pdf): XI Motion in a Straight Line explicitly includes elementary differentiation and integration; Motion in a Plane includes vectors/components. Additional mapped chapters are XI Laws of Motion; Work, Energy and Power; System of Particles and Rotational Motion; Gravitation; Oscillations; Waves, and XII Electric Charges and Fields; Electromagnetic Induction.
+- [CBSE Mathematics 2026–27](https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Maths_SecP2_2026-27.pdf): XI Relations & Functions, Trigonometric Functions, Straight Lines, Sequence and Series, Limits and Derivatives; XII Continuity and Differentiability, Applications of Derivatives, Integrals, Application of the Integrals, Vectors.
+- Exact natural-number sums and XI chain rule are retained in the 2026–27 Mathematics syllabus for formative assessment. They are not described as deleted or absent.
+- The course uses functions to express motion/density/field, differentiation for motion/flux and field maxima, integration for displacement/work/mass distributions/fields, and vectors and trigonometry for components. These support the map's connections; the CBSE documents do not publish this cross-subject map.
+- XII Relations and Functions, Matrices, Determinants and Differential Equations are not added merely because they belong to Mathematics. The supplied course does not establish those chapters' coverage.
 
-The ten editorial checks in [EDITORIAL_REVIEW.md](EDITORIAL_REVIEW.md) come from the approved plan's review of [Measuring AI “Slop” in Text](https://arxiv.org/html/2509.19163v3) and [Can AI writing be salvaged?](https://arxiv.org/html/2409.14509v2). The checks are editing criteria, not an AI-authorship detector; individual words, punctuation, or column layouts do not prove machine authorship.
+## Copy and diagram refinements
 
-## Launch and operational dependencies
+[Ogilvy on Advertising, page 101](https://ogilvy.relayto.com/e/ogilvy-on-advertising-dq85bunnm5ady/Iqgg4Vcm101) discusses making reader benefits and product news prominent. Applied here as clearer course introduction, concrete audience and earlier supporting expertise. No conversion effect or quantitative lift is claimed.
 
-- Google Calendar booking link: owner said it will be supplied later. `bookingUrl` remains empty; no fabricated calendar or successful booking is shown.
-- Optional current portrait, original logo, contact email, and canonical route: configure only when supplied.
-- Timetable, weekly hours, device/access needs, teacher involvement, data handling, and delivery arrangements: meeting agenda items until current answers are confirmed.
-- Current mentor participation and platform readiness: owner review required before outreach. Source provenance does not replace that review.
+The three capstone questions now occupy one connected SVG map, with responsive versions and accessible descriptions. The course journey uses connected SVG dots and edges; its source-path provenance is documented in `CourseConnections.tsx`. Connections can omit intermediate source lessons; they do not invent a new prerequisite system.
+
+## Launch dependencies
+
+Provide the real public calendar booking URL, final canonical URL and any optional approved assets. Confirm current mentor participation, biography and platform readiness. Do not add unsupported delivery details or outcomes. The page includes no student login or school demo.

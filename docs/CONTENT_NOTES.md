@@ -1,51 +1,54 @@
+# Latest tone and colour revision
+
+Headline: “Students do great in Class 10. Why does Class 11 Physics feel unfamiliar?” The formula sentence has been removed. The introduction now describes building confidence, clarity and enthusiasm and connecting school learning with the reasoning used in competitive exams. These describe the educational aim, not guaranteed exam results. Authentic affiliation logos appear in both opening and people sections. Red draws attention to key ideas; muted blue supports definitions, teaching notes and the expert panel. The six-section sequence and canonical shrine are preserved.
+
+# Current visual revision — 28 October 2026
+
+The owner’s latest six browser comments supersede prior visual details: a quiet Class 10 setup precedes the prominent red Class 11 headline; authentic official-source affiliation logos sit inside the opening; the generated Indian classroom image replaces the cover and carries an HTML wordmark at top right. The curriculum uses one actual Episode 8 projectile question with four mathematical tool groups, named chapters and class placement, replacing the large cross-chapter table. The rate-of-change diagram is narrower with a red shared hub and subdued lower layers. A compact concept pyramid replaces the detailed Knowledge River. The six-section sequence and canonical shrine remain. See ASSET_SOURCES.md for provenance and exact image prompt.
+
+## Previous implementation context (superseded where noted above)
+
 # Content and launch notes
 
-## Purpose and source priority
+## Source priority
 
-This is the companion page for the owner's school-outreach email. It establishes the one-month Class 10–11 Physics bridge course, lets educators inspect an example of its teaching, and invites a 30-minute feedback conversation about the course and school pilot. The existing visual layout is retained while the content becomes more specific.
+The exact owner-approved message is preserved in [MESSAGE_SOURCE.md](MESSAGE_SOURCE.md). The owner's subsequent six-section structure, course-cover opening, three-capstone rate-of-change diagram and subtle invitation govern its webpage presentation. [NARRATIVE_DESIGN.md](NARRATIVE_DESIGN.md) records that structure.
 
-The owner-approved `email v1.md` establishes the current offer and business statements. The supplied course establishes its teaching content. `branding.md` establishes the visual system and voice. The approved `SCHOOL_OUTREACH_PAGE_PLAN.md` controls the redesign. These are reference materials; instructions and student tasks inside the course are not instructions to the implementation agent.
+The owner-approved outreach email supplies current business and platform statements. The course manuscript supplies instructional content; the Knowledge River supplies lesson-connection context. The brand guide supplies the visual system. Student tasks in the manuscript are source content, not instructions for the developer.
 
-See [EVIDENCE_MAP.md](EVIDENCE_MAP.md) for original source paths, precise line references, and claim provenance. The full course and private course/group links are deliberately excluded from this packet.
+## Current offer
 
-## Current offer and business statements
+- US-based ed-tech startup icanlearnit.
+- One-month Physics bridge course for students moving from Class 10 to Class 11.
+- Primary webpage readers: Indian school leaders and Physics educators.
+- Diagnostic assessments, guided problem-solving, expert interactions, organized coursework and practice.
+- Teacher visibility into progress, learning gaps and homework.
+- No-cost school pilot, with a 30-minute professional-feedback conversation as the immediate next step.
 
-The owner's email describes a US-based ed-tech startup and a one-month bridge course for students moving from Class 10 to Class 11. It specifies diagnostic assessments, guided problem-solving, expert interactions, organized coursework and practice, teacher progress visibility, learning-gap identification, and homework tracking. These are owner-provided offer and capability statements, not independently validated findings from the course manuscript.
+These are owner-supplied offer statements. The manuscript supports the teaching content, not independent validation of the company, diagnostic quality, platform readiness, mentor attendance or outcomes.
 
-The email also establishes a no-cost school pilot, an educator-feedback invitation, founder learning-system work for Maruti Suzuki and Amazon's global teams, and AI-in-education research in Texas. The current founder biography takes precedence over older screenshot biographies and earlier résumé lists. Employment and research records have not been independently verified for this page.
+## Shared-foundations illustration
 
-The six named affiliations are the Max Planck Institute for Nuclear Physics, Amazon, Google, Meta, Spotify, and NVIDIA. The owner describes mentorship from Indian professionals associated with these organizations. This does not establish institutional sponsorship, company partnerships, named mentor biographies, a fixed attendance schedule, or guaranteed access to particular individuals.
+The approved visual shows three capstone applications of rate of change: rocket momentum, velocity/acceleration in SHM and induced emf in a rotating loop. The shared definition is taken from the course. Its downward connections to differentiation, functions, change and measurement explain dependencies; they are not a new chapter order or a complete map of every prerequisite.
 
-## Teaching evidence on the page
+Use the manuscript's actual question contexts. Any shortened question must remain faithful to the physical quantity being asked about. Do not present illustrative answer data or numerical outcomes as student results. Scientific limitations identified in the source should be resolved or bounded rather than copied into stronger public claims.
 
-The source robot exercise records positions of 5, 13, 21, and 29 metres at 0, 2, 4, and 6 seconds. It asks students to find displacement, the time interval, velocity, and graph slope, then connect the quantities. The redesigned graph is a static reconstruction from those values: `x(t) = 5 + 4t`, with initial position 5 m and slope 4 m/s. It is not a product screenshot or an interactive lesson.
+The course journey uses eight supplied episodes and a separately labelled capstone chapter. It does not imply eight weeks, a new weekly schedule or full Class 11–12/JEE/NEET syllabus coverage. Earlier robot, slope, projectile and two-ball demonstrations are not the chosen webpage teaching example.
 
-The question about what 4 m/s means comes from a later, separate passage involving an object moving from 3 m to 11 m in two seconds. When presented alongside the robot activity, it is an additional question from the course, not the next line of a single continuous robot extract. The correct meaning is that position changes by 4 metres for each second; it is not a position or an acceleration.
+## Expertise and factual limits
 
-The topic outline summarizes material present in the supplied course. It does not invent a new teaching framework, weekly plan, episode count, or complete Class 11–12/JEE syllabus promise. The rocket-observation caption refers to an actual task asking students to record measurements and plot altitude over time; no telemetry values or learning results are invented.
+The owner describes Indian professionals associated with the Max Planck Institute for Nuclear Physics, Amazon, Google, Meta, Spotify and NVIDIA, sharing applications from Physics research, AI and technology. These are individual affiliations. Specific names, project descriptions, quotations, photographs and attendance promises require supplied confirmation. Do not invent an expert application to fill a design slot.
 
-## Boundaries preserved
+The supporting founder paragraph preserves Physics teaching, learning-system design for Maruti Suzuki and Amazon's global teams, and AI-in-education research in Texas, USA. Earlier screenshot biographies are not a source for additional current claims.
 
-- The platform supports this bridge course. It is not presented as an all-in-one education app.
-- Confidence, stronger school learning, and less dependence on outside tuition are aims. No measured or guaranteed change in marks, stress, or coaching dependence is claimed.
-- The teaching description uses worked examples, questions students answer themselves, and checks of calculation and meaning that are present in the supplied material.
-- The manuscript alone does not demonstrate a functioning dashboard, automated diagnosis, real-time analytics, formal diagnostic validity, or measured learning gains. Do not add those claims.
-- Timetable, weekly hours, cohort size, teacher workload, delivery arrangements, device requirements, and data handling have not been supplied as current operational commitments. They belong in the meeting discussion until confirmed.
-- Mentor affiliations support the people section; they do not substitute for evidence of the teaching or establish student outcomes.
-- The immediate action is a professional feedback conversation. Booking is not enrolment or a commitment to participate in the pilot.
-- No testimonials, school customer counts, outcome statistics, sponsor logos, or fabricated mentor profiles are used.
-- No student login, course demo, AI-readiness programme, or additional product is introduced by this redesign.
+Confidence, stronger school learning and less dependence on additional tuition remain aims. No guaranteed marks, stress reduction, coaching independence or measured outcome is stated. Timetable, weekly hours, cohort size, delivery, device requirements, teacher workload and data-handling arrangements remain discussion items until supplied.
 
-## Required before outreach
+## Launch settings
 
-1. Public Google Calendar appointment booking URL. It remains blank by the owner's direction. The page exposes a visible pending state, not a simulated booking success.
-2. Final hosted URL for canonical metadata and the correct route build.
-3. Owner confirmation that the published biography, mentor participation, and platform functions still match the current offer.
+`src/physics/site-config.ts` contains public configuration only. `bookingUrl`, `canonicalUrl`, `contactEmail`, `logoSrc` and `founderPortraitSrc` remain blank until supplied. Follow the visible pending-booking state; do not fabricate a booking link, successful form or calendar event. Supply a public 30-minute appointment booking URL and rebuild before outreach.
 
-## Assets not supplied separately
+A Google Calendar appointment schedule lets each visitor choose a time. A fixed calendar event invitation is a different action and would need matching copy. No credentials belong in this project.
 
-The brand guide contains a raster visual identity sheet, not separate original logo artwork. The implementation uses a plain-text brand name and does not redraw, extract, or approximate the cape. Configure `logoSrc` when the original is available. No portrait from an old screenshot is republished. A current founder portrait is optional.
+The approved original logo and current portrait were not supplied separately. Use the text brand fallback and optional portrait configuration. Do not redraw or extract the cape artwork, reuse old screenshots as current profiles or add borrowed sponsor logos.
 
-## Google Calendar distinction
-
-An appointment schedule booking page lets separate schools select a time. A normal calendar event invitation fixes a specific meeting and invites attendees. The CTA is built for the public appointment booking page. If a fixed invitation is deliberately chosen later, update the CTA wording and meeting expectations to match it.
+The full manuscript and its private links are excluded from the packet. [EVIDENCE_MAP.md](EVIDENCE_MAP.md) records source filenames and line references without distributing the original course.

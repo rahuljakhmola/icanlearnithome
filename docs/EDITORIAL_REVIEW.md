@@ -1,24 +1,30 @@
-# Editorial review
+# Editorial review — 28 October 2026
 
-The ten criteria below follow the approved school-outreach plan. They are quality checks, not a claim about who or what authored the copy. Source provenance is recorded in [EVIDENCE_MAP.md](EVIDENCE_MAP.md).
+The source of truth is [MESSAGE_SOURCE.md](MESSAGE_SOURCE.md). These are editing criteria, not AI-authorship detection. Earlier research references remain [Measuring AI Slop in Text](https://arxiv.org/html/2509.19163v3) and [Can AI writing be salvaged?](https://arxiv.org/html/2409.14509v2).
 
-Status: completed against the redesigned source on 27 October 2026. Files inspected: `src/physics/PhysicsLanding.tsx`, `src/physics/course-content.ts`, and `src/physics/site-config.ts`, with the teaching references checked against the supplied manuscript. This is the copy and provenance review; visual/browser checks are recorded separately in `QA_REPORT.md`.
+| Check | Requirement for this revision |
+| --- | --- |
+| Vague promises | Name the learner, one-month course, school audience and exact curriculum connections. |
+| Low-information headings | Each beat advances the shrine's argument. |
+| Repeated benefits | Develop the explanation, then return to confidence in the conclusion. |
+| Mechanical slogan patterns | Use concise connected prose; headings support substance. |
+| Teaching claims without evidence | Use actual course excerpts and source-based graph connections. |
+| Unsupported certainty | State intended benefits as aims; respect differences between students and school timetables. |
+| Invented pedagogy | Preserve actual course topics and episodes. The graph explains convergence. |
+| Borrowed authority | Describe experts' educational contribution; use individual affiliations accurately and only confirmed applications. |
+| Scope drift | Keep the Physics bridge course central; AI describes expert/founder work. |
+| Excessive wording | One dominant message per section, optional detail in disclosures, quiet CTA. |
 
-| Indicator | Required change | Verification |
-| --- | --- | --- |
-| Vague benefit copy | Replace generic motivational fragments with student actions from the supplied exercise. | **Addressed.** The robot table leads through displacement, time, velocity, and graph slope (`PhysicsLanding.tsx`, lines 82–93). “Use it. Make it yours.” is removed. |
-| Low-information headings | Name the example, topics, school pilot, people, and meeting directly. | **Addressed.** The page uses “Connecting a table, a graph, and velocity,” “What students work on,” “The one-month school pilot,” founder/mentor identification, and a course-feedback meeting invitation (lines 84, 98, 106, 120, 129). |
-| Repeated benefits | State school learning/tuition-dependence aims once; use other sections for evidence and offer detail. | **Addressed.** The tuition/confidence purpose appears once in the pilot section (line 108). The example shows the teaching; the course section supplies topics; the student/teacher columns state functions. Necessary offer and CTA repetition remains for navigation. |
-| Uniform slogan patterns | Remove repeated paired slogans and invented three-step promotional language. | **Addressed.** The former “A clearer path… A clearer view…” and “One month. A thoughtful first step.” headings are gone. The three columns now describe worked examples, independent questions, and checks of meaning (line 99), rather than a named three-step method. |
-| Method claims without evidence | Show the actual robot table and task sequence; separately identify the later meaning question. | **Addressed.** The graph and table share the exact `positionData` values (`course-content.ts`, lines 13–16). The SVG starts at 5 m and depicts 4 m/s. The additional meaning check is labelled “A question from the course” outside the robot worked-example sheet (line 86); it is not described as a continuous extract. Its separate source context is documented in `EVIDENCE_MAP.md`. |
-| Unsupported certainty or precision | Retain aims as aims; omit guaranteed outcomes and unconfirmed operational details. | **Addressed.** Benefits use “Our aim.” No marks, stress statistics, guaranteed tuition reduction, 12-hour commitment, cohort size, or real-time analytics are added. Delivery and student/teacher commitment remain discussion topics (lines 108–114; `schoolFaqs`). Booking retains an honest pending state (line 131; empty `bookingUrl`). |
-| Invented teaching framework | Use topic summaries grounded in the course rather than a new named pedagogy or weekly schedule. | **Addressed.** The outline preserves the eight supplied episode titles, gives factual topic summaries, and labels the separate capstone. The FAQ explicitly limits full-syllabus expectations (`course-content.ts`, lines 2–11 and 23–25). No five-stage framework or weekly schedule remains. |
-| Authority replacing evidence | Put actual teaching before founder and affiliations; keep affiliations proportional. | **Addressed.** The teaching example, topics, and pilot precede the people section. Founder wording follows the owner's email; all six affiliations are intact and described as individual associations, without sponsor logos (lines 118–123). |
-| Scope drift | Establish the bridge course, supporting platform, school pilot, and feedback meeting only. | **Addressed.** The hero identifies the exact Class 10–11 offer. The meeting is for introduction, feedback, and school fit. No all-in-one app, school demo, broad AI programme, or enrolment flow is introduced. AI remains in the founder biography. |
-| Ornate or stock wording | Use concrete descriptions; keep only sparing approved brand language. | **Addressed.** Descriptions use course actions and concepts. No “transformative,” “world-class,” “unlock potential,” “seamless,” or “future-ready” additions appear. “Learn. Practice. Grow.” remains in the brand strip and footer. Necessary Physics vocabulary and the approved hero headline are retained. |
+The page's positive professional voice describes what the course offers and works towards. The founder remains a supporting profile after the collective expert contribution. The student question is “Why should I study this?”
 
-## Remaining content dependencies
+## Capstone revision requirements
 
-- The booking URL is intentionally pending. The packet does not imply that a meeting can already be booked.
-- Platform functions, founder background, and mentor involvement retain the owner's email provenance. The manuscript does not independently validate these business statements.
-- Confirm current offer details before outreach, then connect the final calendar and canonical route. No operational promises should be inferred from the archived course notes.
+The approved example is the shared rate-of-change relationship across changing rocket momentum, SHM and rotating-loop induction. Use the course definition and physical quantities accurately. The rocket prompt is adapted to rate of change of momentum, not an unqualified net-force claim for a variable-mass system. The graph shows shared concepts; it does not introduce an invented “divide/describe/add” framework. No specific expert application is supplied, so the people section describes the owner-confirmed contribution without fabricating a research case.
+
+## Browser-feedback copy review
+
+The opening now says “Strong Class 10 results. Class 11 Physics can still feel unfamiliar.” It names the product, audience and purpose directly, reducing alternating “they”/“we” constructions while retaining the transition problem from the shrine. Collective expertise is placed in the introductory copy, above the cover on mobile. The founder still appears later.
+
+[Ogilvy on Advertising, page 101](https://ogilvy.relayto.com/e/ogilvy-on-advertising-dq85bunnm5ady/Iqgg4Vcm101) is the primary copy reference for prominent reader benefit and product news. This supports an editorial choice, not a causal conversion claim or a blanket ban on particular pronouns. No claims of improved performance are made.
+
+The curriculum section names the actual Mathematics and Physics chapters instead of relying on vague labels. Its five foundations are an explicit course-based cross-map, not a CBSE-issued mapping. Both teaching diagrams use unified, connected SVG compositions in their desktop and mobile versions. Highlighting repeats actual course concepts, especially rate of change; connected lines carry the relationship instead of prose-only assertions.
