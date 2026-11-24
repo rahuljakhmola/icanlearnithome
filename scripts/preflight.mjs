@@ -3,15 +3,24 @@ import { readFileSync, existsSync } from "node:fs";
 const config = readFileSync(new URL("../src/physics/site-config.ts", import.meta.url), "utf8");
 const setting = (name) => config.match(new RegExp(`${name}:\\s*"([^"\\n]*)"`))?.[1] || "";
 let failed = false;
-for (const name of ["bookingUrl", "canonicalUrl"]) {
+const isHttps = (value) => {
   try {
-    const url = new URL(setting(name));
-    if (url.protocol !== "https:") throw new Error("HTTPS required");
-    console.log(`PASS ${name}: ${url.href}`);
+    return new URL(value).protocol === "https:";
   } catch {
-    console.error(`REQUIRED: Set ${name} to the real public HTTPS URL in src/physics/site-config.ts.`);
-    failed = true;
+    return false;
   }
+};
+const bookingConfigured = isHttps(setting("bookingUrl"));
+const formConfigured = isHttps(process.env.NEXT_PUBLIC_SCHOOL_WALKTHROUGH_ENDPOINT || "");
+if (!bookingConfigured && !formConfigured) {
+  console.error("REQUIRED: Set bookingUrl or NEXT_PUBLIC_SCHOOL_WALKTHROUGH_ENDPOINT to a public HTTPS URL.");
+  failed = true;
+} else {
+  console.log(formConfigured ? "PASS walkthrough form endpoint configured" : "PASS walkthrough calendar configured");
+}
+if (!isHttps(setting("canonicalUrl"))) {
+  console.error("REQUIRED: Set canonicalUrl to the real public HTTPS URL in src/physics/site-config.ts.");
+  failed = true;
 }
 for (const file of ["../src/physics/PhysicsLanding.tsx", "../src/physics/course-content.ts", "../src/physics/CurriculumMap.tsx", "../src/physics/RateOfChange.tsx", "../src/physics/CourseConnections.tsx", "../src/physics/physics.module.css", "../app/page.tsx", "../README.md"]) {
   if (!existsSync(new URL(file, import.meta.url))) {
@@ -20,5 +29,5 @@ for (const file of ["../src/physics/PhysicsLanding.tsx", "../src/physics/course-
   }
 }
 if (!setting("logoSrc")) console.warn("ASSET NOTE: Plain-text brand name in use. Set logoSrc to the approved logo artwork when available.");
-console.log("Check the booking destination manually before launch. This command does not verify scheduler availability.");
+console.log("Check the walkthrough destination manually before launch. This command validates URL format only.");
 process.exitCode = failed ? 1 : 0;

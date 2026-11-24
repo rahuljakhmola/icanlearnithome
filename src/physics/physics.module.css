@@ -167,7 +167,8 @@
 @media(max-width:360px){.heroGrid h1{font-size:35px}}
 .heroGrid h1>.headlineSetup{font-size:.7em;line-height:1.3;color:var(--slate);margin-bottom:14px;font-weight:400;letter-spacing:-1.3px}
 .heroGrid h1>.headlineFocus{color:var(--action);font-weight:600;letter-spacing:-2px}
-.classroom{position:relative;align-self:start;margin:0!important;background:var(--paper)}.classroom>img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}.imageBrand{position:absolute;right:18px;top:18px;background:#f8f7f2f2;padding:9px 13px;font-size:25px;letter-spacing:-1.2px;line-height:1.2;font-weight:500}.imageBrand>span{color:var(--red)}.classroom figcaption{font-size:11px;padding-top:12px;line-height:1.7}.classroom figcaption>span{display:block;color:var(--slate);font-size:9px}
+.classroom{position:relative;align-self:start;margin:0!important;background:var(--paper)}.classroomImageLink{display:block}.classroomImageLink>img{display:block;width:100%;height:auto}.classroom figcaption{font-size:11px;padding-top:12px;line-height:1.7}.classroom figcaption>a{text-decoration:underline;text-underline-offset:3px}.classroom figcaption>span{display:block;color:var(--slate);font-size:9px}
+
 .capstoneSection{padding-block:50px}.capstoneSection .sectionIntro>p:last-child{margin-top:13px}.capstoneSection h2{font-size:clamp(29px,3vw,39px)}
 .heroGrid .heroExpertise .logoStrip{display:flex;align-items:center;flex-wrap:wrap;gap:18px 24px;margin-top:15px}.heroGrid .logoStrip li{display:flex;align-items:center;justify-content:center;min-width:58px}.heroGrid .logoStrip li:first-child{width:auto;flex-basis:100%;justify-content:flex-start;gap:12px}.logoStrip img{display:block;max-width:80px;width:auto;height:23px;object-fit:contain}.logoStrip .mpiLogo img{max-width:130px;height:35px}.logoStrip .mpiLogo>span{font-size:10px;max-width:180px;line-height:1.5}.logoStrip .metaLogo img{width:26px;height:26px}.logoStrip .metaLogo{gap:4px}.logoStrip .metaLogo>span{font-size:14px}.logoStrip li:nth-child(2) img{width:77px;height:38px;object-fit:contain}.logoStrip li:last-child img{width:72px;height:29px}
 .logoStrip li:nth-child(5){background:#182337;padding:7px 9px}.logoStrip li:nth-child(5) img{height:20px;width:75px}
@@ -182,3 +183,279 @@
 @media(max-width:600px){.expertPanel{padding:20px}.expertPanel .logoStrip{gap:18px 22px}.expertPanel .logoStrip .mpiLogo img{max-width:125px;height:34px}.logoStrip .mpiLogo>span{font-size:10px;max-width:170px}.teachingApproach>div{padding-left:14px}.outcome{padding-left:15px}}
 
 .communityLine{display:flex;align-items:flex-start;gap:11px;font-size:13px;line-height:1.65;font-weight:500;color:var(--ink);letter-spacing:0;max-width:560px}.indianFlag{display:block;flex:0 0 27px;width:27px;height:18px;margin-top:2px;border:1px solid #e2e0d9}.expertPanel .communityLine{max-width:640px}@media(max-width:720px){.communityLine{font-size:12px;gap:9px}.indianFlag{flex-basis:24px;width:24px;height:16px}}
+
+/* Make the offer scannable without displacing the opening question. */
+.courseOffer{margin-top:24px;padding:18px 0 0 18px;border-left:3px solid var(--blue)}
+.courseOffer h2{font-size:24px;line-height:1.25;letter-spacing:-.7px;font-weight:600;text-wrap:initial}
+.offerFacts{display:flex;flex-wrap:wrap;gap:7px 14px;margin-top:10px!important;color:#334f61;font-size:12px;line-height:1.6;font-weight:600}
+.offerFacts>span:first-child{padding:1px 8px;background:#e7eef3}
+.offerFacts>span:last-child{padding-block:1px}
+.offerBenefit{font-size:14px;line-height:1.75;margin-top:12px!important;max-width:580px}
+.offerOrigin{font-size:11px;color:var(--slate);margin-top:7px!important}
+.heroInvitation{display:flex;align-items:center;flex-wrap:wrap;gap:6px 20px;margin-top:21px}
+.pilotLabel{font-size:11px;font-weight:500;color:#39586c}
+.heroGrid .heroInvitation .quietLink{margin-top:0}
+@media(max-width:720px){.courseOffer{margin-top:22px;padding:14px 0 0 14px}.courseOffer h2{font-size:22px;letter-spacing:-.6px}.offerFacts{font-size:11px;gap:6px 10px}.offerBenefit{font-size:13px}.heroInvitation{gap:5px 17px;margin-top:20px}}
+
+/* Opening composition: offer and invitation stay together; evidence supports both columns. */
+.heroContainer{width:min(1720px,calc(100% - 96px))}
+.hero{padding-top:48px}
+.heroGrid{grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr);gap:56px;align-items:center;padding-bottom:36px}
+.heroGrid h1{font-size:clamp(40px,3.3vw,58px);max-width:720px}
+.heroCopy{min-width:0}
+.courseOffer{padding-top:4px;margin-top:28px;max-width:620px}
+.courseOffer h2{font-size:clamp(24px,2vw,30px);line-height:1.25}
+.offerBenefit{font-size:15px;line-height:1.75}
+.heroInvitation{margin-top:18px;padding-top:12px;border-top:1px solid var(--rule)}
+.heroInvitation .quietLink{font-size:13px}
+.classroom{align-self:center;min-width:0}
+.classroomImageLink{position:relative;overflow:hidden}
+.classroomBanner{position:absolute;inset:0 0 auto;min-height:18%;padding:2.4% 3%;display:flex;align-items:center;justify-content:flex-end;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.6)}
+.classroomWordmark{font-size:clamp(21px,2.3vw,38px);line-height:1.1;letter-spacing:-1.7px;font-weight:500;color:var(--ink)}
+.classroomWordmark>span{color:var(--red)}
+.hero>.heroContainer>.heroExpertise{display:flex;align-items:center;gap:48px;padding:26px 0;border-top:1px solid var(--rule);margin-top:0}
+.heroExpertise>.communityLine{flex:0 1 440px;font-size:14px;line-height:1.7;max-width:440px}
+.heroExpertise>.logoStrip{flex:1;display:flex;align-items:center;flex-wrap:wrap;gap:20px 28px;margin:0}
+.heroExpertise>.logoStrip li:first-child{flex-basis:auto;justify-content:flex-start;gap:12px;width:auto}
+.heroExpertise>.logoStrip .mpiLogo>span{font-size:10px;max-width:155px}
+.heroFoot{margin-top:0;justify-content:flex-end;padding-block:17px}
+@media(max-width:1399px){.hero>.heroContainer>.heroExpertise{flex-direction:column;align-items:flex-start;gap:18px}.heroExpertise>.communityLine{flex:auto;max-width:680px}.heroExpertise>.logoStrip{flex:auto;gap:18px 24px}.heroGrid{gap:36px}}
+@media(max-width:900px){.heroContainer{width:calc(100% - 48px)}.heroGrid{grid-template-columns:1fr;gap:30px;align-items:start}.heroGrid h1{max-width:680px;font-size:44px}.courseOffer{max-width:680px}.classroom{width:100%}.classroomWordmark{font-size:clamp(24px,4vw,34px)}.hero{padding-top:36px}}
+@media(max-width:600px){.heroContainer{width:calc(100% - 44px)}.heroGrid h1{font-size:38px;letter-spacing:-1.8px}.courseOffer h2{font-size:23px}.offerBenefit{font-size:13px}.heroExpertise>.communityLine{font-size:12px}.heroExpertise>.logoStrip{gap:16px 22px}.heroExpertise>.logoStrip li:first-child{flex-basis:100%}.classroomWordmark{font-size:23px;letter-spacing:-1.2px}.hero>.heroContainer>.heroExpertise{padding-block:22px}.heroInvitation{gap:7px 16px}.heroGrid{padding-bottom:24px}.heroFoot{font-size:10px}}
+@media(max-width:360px){.heroGrid h1{font-size:34px}.heroInvitation{align-items:flex-start;flex-direction:column;gap:3px}}
+
+.analyticsIllustration{max-width:760px;margin:36px auto}.analyticsIllustration figure{width:100%}
+
+.heroCommunity{margin-top:32px;max-width:520px}.heroCommunity .communityLine{font-size:17px;line-height:1.7}.heroCommunity .offerOrigin{margin:18px 0 0;font-size:12px}.hero>.heroContainer>.heroExpertise{padding:24px 0 12px}.hero>.heroContainer>.heroInvitation{margin:0;padding:12px 0 24px;border-top:0}.heroCommunity .communityLine{max-width:520px}@media(max-width:600px){.heroCommunity .communityLine{font-size:15px}}
+
+.schoolsLabel {
+  display: inline-block;
+  margin-left: .8rem;
+  color: var(--slate);
+  font-size: .64rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.schoolNav, .schoolActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  font-size: .85rem;
+}
+.schoolNav a, .schoolActions a { text-decoration: none; }
+.schoolNav a:hover, .schoolActions a:hover { text-decoration: underline; }
+.pilotButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: .6rem .95rem;
+  border: 1px solid var(--action);
+  background: var(--action);
+  color: white;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pilotButton:hover { background: #902820; }
+.schoolLead { max-width: 62ch; margin: 22px 0 10px; }
+.proofStrip, .pilotLogistics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 16px;
+  padding: 14px 0;
+  margin: 18px 0;
+  border-block: 1px solid var(--rule);
+}
+.proofStrip { list-style: none; color: var(--slate); font-size: .83rem; }
+.pilotLogistics { gap: 16px; margin-bottom: 28px; }
+.pilotLogistics dt { color: var(--slate); font-size: .82rem; }
+.pilotLogistics dd { margin: 0; }
+.walkthroughForm { display: grid; gap: 12px; max-width: 520px; }
+.walkthroughForm label { display: grid; gap: 4px; }
+.walkthroughForm input, .walkthroughForm select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--rule);
+  font: inherit;
+  color: var(--ink);
+  background: white;
+}
+.walkthroughForm button { justify-self: start; }
+@media (min-width: 900px) {
+  .pilotLogistics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .headerInner:has(.schoolNav) { flex-wrap: wrap; gap: 12px; }
+  .schoolNav { gap: 8px 15px; font-size: .75rem; }
+}
+
+.header:has(.schoolNav) {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+}
+.root :is(#curriculum, #course, #people, #pilot, #conversation) { scroll-margin-top: 135px; }
+.heroCopy .schoolLead { margin: 14px 0; }
+.readinessPreview {
+  margin: 0;
+  padding: clamp(20px, 4vw, 48px);
+  background: #edf2f4;
+  border: 1px solid #c7d4dc;
+}
+.readinessPreview figcaption {
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.readinessPreview h2 { margin: 8px 0 20px; font-size: clamp(23px, 2.5vw, 38px); }
+.readinessPreview table { width: 100%; border-collapse: collapse; text-align: left; font-size: .88rem; }
+.readinessPreview th, .readinessPreview td { padding: 12px 8px; border-bottom: 1px solid #c7d4dc; }
+.readinessPreview thead { color: var(--slate); }
+.readinessPreview tbody th { font-weight: 500; }
+.readinessPreview td span { color: #8e3029; }
+.readinessPreview td span[data-ready="true"] { color: #285c43; }
+.readinessPreview p, .curriculumSources { font-size: .8rem; color: var(--slate); }
+.schoolEvidence, .schoolPilotGrid, .schoolSystem { display: grid; gap: 24px; margin-block: 28px; }
+.schoolEvidence > *, .schoolPilotGrid > * { min-width: 0; }
+.schoolSystem > div { border-top: 1px solid var(--rule); padding-top: 14px; }
+.schoolSystem p { margin: 6px 0 0; }
+.schoolMentors { margin-block: 48px 24px; }
+.mentorAffiliations { color: var(--slate); }
+.schoolPilotGrid .invitation { margin-top: 0; }
+.schoolPilotGrid .pilotLogistics { grid-template-columns: 1fr; }
+@media (min-width: 980px) {
+  .schoolEvidence, .schoolPilotGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .schoolSystem { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* School page. Reserve the strongest colour for the walkthrough action. */
+.root .pilotButton,
+.root .pilotButton:hover {
+  min-height: 44px;
+  justify-content: center;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+.schoolNav .pilotButton { margin-left: 4px; }
+.root .schoolActions > a:not(.pilotButton) {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: var(--slate);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.hero:has(.readinessPreview) .heroGrid { align-items: center; }
+.hero:has(.readinessPreview) .heroCopy h1 {
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -.045em;
+  font-weight: 600;
+}
+.heroCopy .schoolLead { max-width: 58ch; line-height: 1.55; }
+.heroCopy .schoolActions { margin-top: 22px; }
+.proofStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 0;
+  padding: 0;
+}
+.proofStrip li {
+  padding: 4px 9px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: white;
+}
+.root :is(#episode-preview, #analytics) { scroll-margin-top: 130px; }
+.root .readinessPreview {
+  background: white;
+  border: 1px solid #c7d4dc;
+  border-top: 3px solid var(--blue);
+}
+.readinessPreview figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+.readinessPreview figcaption span { color: #405d73; }
+.readinessPreview td span {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #fcf3e3;
+  color: #6e4b16;
+  border-radius: 3px;
+}
+.readinessPreview td span[data-ready="true"] { background: #e9f2eb; }
+.root .readinessPreview p { margin-top: 18px; }
+.schoolEvidence { align-items: stretch; }
+.schoolEvidence > div > figure { margin-top: 0 !important; }
+.root .curriculumSources { margin-top: 12px; }
+.root .curriculumSources a { text-decoration: underline; text-underline-offset: 3px; }
+.root .capstonePreview {
+  border: 1px solid var(--rule);
+  padding: clamp(16px, 3vw, 28px);
+  background: var(--paper);
+}
+.previewLabel { color: var(--slate); font-size: .72rem; font-weight: 600; letter-spacing: .09em; }
+.root .capstonePreview h3, .root .episodePreview h3 { margin-top: 6px; }
+.capstonePreview ul { padding: 0; list-style: none; margin: 22px 0 0; }
+.capstonePreview li {
+  display: grid;
+  padding: 10px 0;
+  border-top: 1px solid var(--rule);
+}
+.capstonePreview li span { font-size: .85rem; color: var(--slate); }
+.sharedConcept {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #eaf0f4;
+}
+.episodePreview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-block: 24px;
+  padding: clamp(18px, 3vw, 30px);
+  background: #edf2f4;
+  border-left: 2px solid var(--blue);
+}
+.episodePreview > div { flex: 1 1 380px; }
+.root .episodePreview a, .previewAnswer summary { text-decoration: underline; text-underline-offset: 4px; }
+.root .previewAnswer summary, .root .episodePreview a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: .85rem; }
+.previewAnswer[open] summary span { transform: rotate(45deg); }
+.previewAnswer > p { max-width: 58ch; font-size: .9rem; }
+.walkthroughCard {
+  border: 1px solid var(--rule);
+  background: white;
+  padding: clamp(18px, 3vw, 34px);
+  align-self: start;
+}
+.root .walkthroughCard > p { margin: 10px 0 16px; }
+.pilotFee { margin-bottom: 12px; color: #405d73; font-size: .85rem; font-weight: 600; }
+.schoolPilotGrid .pilotLogistics { gap: 0; }
+.schoolPilotGrid .pilotLogistics > div { padding-block: 10px; }
+.schoolPilotGrid .pilotLogistics > div + div { border-top: 1px solid var(--rule); }
+@media (min-width: 980px) {
+  .schoolEvidence { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  .headerInner:has(.schoolNav) { flex-wrap: nowrap; gap: 8px; min-height: 62px; }
+  .schoolNav > a:not(.pilotButton) { display: none; }
+  .schoolNav .pilotButton { padding: 6px 10px; }
+  .schoolsLabel { margin-left: .4rem; font-size: .54rem; }
+  .hero:has(.readinessPreview) { padding-top: 26px; }
+  .hero:has(.readinessPreview) .heroCopy h1 { font-size: clamp(30px, 8vw, 36px); }
+  .heroCopy .schoolLead { font-size: 15px; }
+  .root :is(#curriculum, #course, #people, #pilot, #conversation, #episode-preview, #analytics) { scroll-margin-top: 80px; }
+}

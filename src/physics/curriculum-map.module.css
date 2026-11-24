@@ -3,3 +3,9 @@
 @media(max-width:800px){.tools{grid-template-columns:1fr 1fr}.tools>div{padding:17px 12px!important}.tools>div:nth-child(2){border-right:0}.tools>div:nth-child(n+3){border-top:1px solid var(--rule)}.question h3{font-size:20px}.figure{padding:20px}.tools h4{font-size:14px}.tools p{font-size:11px}}
 
 .question{border-left:3px solid #b7352c;padding-left:18px}.question>span{color:#39586c}.tools>div{background:#edf2f4;padding:18px 14px!important;border-top:2px solid #7ea6c9}.tools h4{color:#334f61}.connector{font-weight:600}
+
+.figure { container-type: inline-size; }
+@container (max-width: 625px) {
+  .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tools > div:nth-child(2) { border-right: 0; }
+}

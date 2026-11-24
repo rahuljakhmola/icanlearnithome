@@ -1,97 +1,109 @@
 import { bookingUrl, siteConfig } from "./site-config";
-import { courseEpisodes, schoolFaqs } from "./course-content";
-import CourseConnections from "./CourseConnections";
-import RateOfChange from "./RateOfChange";
-import CurriculumMap from "./CurriculumMap";
-import AffiliationLogos from "./AffiliationLogos";
+import { courseEpisodes } from "./course-content";
+import BridgeTimeline from "./BridgeTimeline";
+import classroom from "./assets/classroom-readiness.png";
+import visual from "./school-visual.module.css";
 import ExpertProfiles from "./ExpertProfiles";
-import classroomImage from "./assets/classroom-generated.png";
 import styles from "./physics.module.css";
 
-const physicsSyllabus = "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Physics_SecP2_2026-27.pdf";
-const mathsSyllabus = "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Maths_SecP2_2026-27.pdf";
 
-function CommunityLine() {
-  return <p className={styles.communityLine}>
-    <svg className={styles.indianFlag} viewBox="0 0 30 20" role="img" aria-label="India">
-      <rect width="30" height="20" fill="#fff" />
-      <path d="M0 0h30v6.667H0z" fill="#ff9933" />
-      <path d="M0 13.333h30V20H0z" fill="#138808" />
-      <circle cx="15" cy="10" r="2.8" fill="none" stroke="#000080" strokeWidth=".35" />
-      {Array.from({ length: 24 }, (_, i) => <line key={i} x1="15" y1="10" x2={15 + 2.8 * Math.cos(i * Math.PI / 12)} y2={10 + 2.8 * Math.sin(i * Math.PI / 12)} stroke="#000080" strokeWidth=".16" />)}
-      <circle cx="15" cy="10" r=".45" fill="#000080" />
-    </svg>
-    <span>Leading Indian scientists and engineers across the globe, helping the next generation back home.</span>
-  </p>;
-}
+function PilotLink({ compact = false }: { compact?: boolean }) {
+  const canBook = Boolean(bookingUrl);
+  const label = canBook
+    ? (compact ? "Book walkthrough" : "Book a 30-minute walkthrough")
+    : (compact ? "Request walkthrough" : "Request a 30-minute walkthrough");
 
-function Arrow() { return <span aria-hidden="true">↗</span>; }
-function InvitationLink() {
-  return <a className={styles.quietLink} href={bookingUrl || "#conversation"}
-    {...(bookingUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}>Be part of shaping the course <Arrow /></a>;
+  return <a className={styles.pilotButton} href={bookingUrl || "#conversation"}>
+    {label} <span aria-hidden="true">{canBook ? "↗" : "↓"}</span>
+  </a>;
 }
 
 function CourseOutline() {
-  return <details className={styles.disclosure}><summary><span>Explore the eight course episodes</span><span aria-hidden="true">+</span></summary>
+  return <details className={styles.disclosure}><summary><span>Inspect the eight-episode syllabus and capstone</span><span aria-hidden="true">+</span></summary>
     <ol className={styles.episodeList}>{courseEpisodes.map(({ title, topics }) => <li key={title}><h3>{title}</h3><p>{topics}</p></li>)}</ol>
     <p className={styles.detailNote}>A separate capstone applies these foundations to work and energy, gravitation, electrostatics, rotation and electromagnetic induction.</p>
   </details>;
 }
 
-function CourseCover() {
-  return <figure className={styles.classroom}><img src={classroomImage.src} width={classroomImage.width} height={classroomImage.height} alt="Illustration of Indian students in school uniform learning Physics with a teacher in a sunlit classroom" /><span className={styles.imageBrand}>ican<span>learnit.</span></span><figcaption>Physics Bridge Course · Class 10 → 11 · One month<span>AI-generated classroom illustration</span></figcaption></figure>;
+function EpisodePreview() {
+  return <aside id="episode-preview" className={styles.episodePreview} aria-labelledby="episode-preview-title">
+    <div>
+      <p className={styles.previewLabel}>EPISODE 1 · SAMPLE ACTIVITY</p>
+      <h3 id="episode-preview-title">Can you add 3 metres and 2 seconds?</h3>
+      <details className={styles.previewAnswer}>
+        <summary>Reveal the reasoning <span aria-hidden="true">+</span></summary>
+        <p>Metres measure length. Seconds measure time. An addition needs quantities of the same kind. Dividing 3 metres by 2 seconds, however, gives a speed of 1.5 m/s.</p>
+      </details>
+    </div>
+    <a href="#analytics">See the teacher readiness preview ↑</a>
+  </aside>;
 }
 
 export default function PhysicsLanding() {
   return <div className={styles.root}>
     <a className={styles.skipLink} href="#main-content">Skip to content</a>
-    <header className={styles.header}><div className={`${styles.container} ${styles.headerInner}`}>
-      <a className={styles.brand} href="#top" aria-label="icanlearnit — back to top">{siteConfig.logoSrc ? <img src={siteConfig.logoSrc} alt="icanlearnit" className={styles.logo} /> : <span className={styles.brandText}>ican<span>learnit.</span></span>}</a>
-      <nav className={styles.nav} aria-label="Page navigation"><a href="#course">Course</a><a href="#connections">Approach</a><a href="#people">People</a></nav>
+    <header className={styles.header}><div className={`${styles.container} ${styles.heroContainer} ${styles.headerInner}`}>
+      <a className={styles.brand} href="#top" aria-label="icanlearnit — back to top">{siteConfig.logoSrc ? <img src={siteConfig.logoSrc} alt="icanlearnit" className={styles.logo} /> : <span className={styles.brandText}>ican<span>learnit.</span></span>}<span className={styles.schoolsLabel}>Schools</span></a>
+      <nav className={styles.schoolNav} aria-label="Page navigation">
+        <a href="#people">Mentors</a>
+        <a href="#course">Teacher Insights</a>
+        <a href="#curriculum">Course Design</a>
+        <a href="#pilot">Pilot Terms</a>
+        <PilotLink compact />
+      </nav>
     </div></header>
     <main id="main-content">
-      <section id="top" className={styles.hero} aria-labelledby="hero-title"><div className={styles.container}>
-        <div className={styles.heroGrid}><div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>FOR INDIAN SCHOOL LEADERS & PHYSICS EDUCATORS</p>
-          <h1 id="hero-title"><span className={styles.headlineSetup}>Students do great in Class 10.</span><span className={styles.headlineFocus}>Why does Class 11 Physics feel unfamiliar?</span></h1>
-          <p>A <strong>one-month Physics bridge course</strong> from US-based icanlearnit, helping students build <strong>confidence, clarity and enthusiasm</strong>—and connect school learning with the reasoning used in competitive exams.</p>
-          <div className={styles.heroExpertise}><CommunityLine /><AffiliationLogos /></div>
-          <InvitationLink />
-        </div><CourseCover /></div>
-        <div className={styles.heroFoot}><span>Learn. Practice. Grow.</span><a href="#curriculum">See how the ideas connect <span aria-hidden="true">↓</span></a></div>
-      </div></section>
-
-      <section id="curriculum" className={`${styles.section} ${styles.whiteSection}`} aria-labelledby="curriculum-title"><div className={styles.container}>
-        <div className={styles.sectionIntro}><p className={styles.eyebrow}>01 / THE CURRICULUM CONNECTION</p><h2 id="curriculum-title">A simple Physics question.<br />Several mathematical tools.</h2><p>Understanding the question means understanding the mathematics behind it. These tools develop across different chapters and school years.</p></div>
-        <CurriculumMap />
-        <div className={styles.sourceLine}><p>Physics introduces these tools too. The course gives students time to explore their meaning and connections.</p><p><a href={physicsSyllabus} target="_blank" rel="noopener noreferrer">CBSE Physics 2026–27 ↗</a> · <a href={mathsSyllabus} target="_blank" rel="noopener noreferrer">Mathematics ↗</a><br />Classroom teaching order varies by school.</p></div>
-      </div></section>
-
-      <section id="connections" className={`${styles.section} ${styles.capstoneSection}`} aria-labelledby="connections-title"><div className={styles.container}>
-        <div className={styles.sectionIntro}><p className={styles.eyebrow}>02 / THE SHARED FOUNDATIONS</p><h2 id="connections-title">Different chapters.<br />The same underlying idea.</h2><p>Three questions from the capstone look different. Trace them back and the same idea appears: <strong>rate of change.</strong></p></div>
-        <RateOfChange />
-      </div></section>
-
-      <section id="course" className={`${styles.section} ${styles.graphSection}`} aria-labelledby="course-title"><div className={styles.container}>
-        <div className={styles.sectionIntro}><p className={styles.eyebrow}>03 / THE COURSE JOURNEY</p><h2 id="course-title">Our course brings these ideas together<br />through physical questions.</h2><p>Measurement, graphs, functions, sequences, calculus, trigonometry and vectors develop and reconnect throughout the course.</p></div>
-        <CourseConnections />
-        <div className={styles.teachingApproach}><div><h3>Build the reasoning.</h3><p>Worked examples, guided questions and independent practice help students build the reasoning themselves.</p></div><div><h3>Follow the progress.</h3><p>Diagnostic assessments identify gaps, while the supporting platform organizes coursework and helps teachers follow progress and homework completion.</p></div></div>
-        <CourseOutline />
-      </div></section>
-
-      <section id="people" className={`${styles.section} ${styles.peopleSection}`} aria-labelledby="people-title"><div className={styles.container}>
-        <div className={styles.sectionIntro}><p className={styles.eyebrow}>04 / THE POSSIBILITIES</p><h2 id="people-title">See what these foundations<br />make possible.</h2><p>“Why should I study this?” Professionals share actual applications from Physics research, AI and technology, helping students see why these ideas are worth studying.</p></div>
-        <div className={styles.expertPanel}><CommunityLine /><AffiliationLogos /><p className={styles.affiliationNote}>Individual professional affiliations.</p></div>
-        <ExpertProfiles founderPortraitSrc={siteConfig.founderPortraitSrc} />
-      </div></section>
-
-      <section id="pilot" className={`${styles.section} ${styles.closingSection}`} aria-labelledby="pilot-title"><div className={styles.container}>
-        <p className={styles.eyebrow}>05 / THE CONFIDENCE</p><h2 id="pilot-title">Stronger understanding<br />to bring into school lessons.</h2><p className={styles.outcome}>Our aim is to help students return to school lessons with stronger understanding, greater confidence and less dependence on additional tuition.</p>
-        <div id="conversation" className={styles.invitation}><p>We’re inviting educators to help shape the course around the needs of students and teachers through a no-cost school pilot.</p>
-          {bookingUrl ? <><InvitationLink /><p className={styles.bookingNote}>A 30-minute conversation with our team. Opens our booking calendar.</p></> : <details className={styles.bookingDetails}><summary>Be part of shaping the course <Arrow /></summary><p>A 30-minute conversation to share your thoughts and discuss the pilot. Our meeting calendar will be added here soon. If you received our invitation email, reply “Yes” to arrange a conversation.</p>{siteConfig.contactEmail && <a href={`mailto:${siteConfig.contactEmail}`}>Contact our team ↗</a>}</details>}
+      <section id="top" className={visual.hero} aria-labelledby="hero-title">
+        <div className={styles.container}>
+          <div className={visual.heroHeading}>
+            <div><p className={styles.eyebrow}>FOR INDIAN SCHOOLS · INCOMING CLASS 11</p>
+              <h1 id="hero-title">A four-week Physics bridge<br /><span>for students entering Class 11.</span></h1>
+              <p>Build the mathematical foundations to understand Physics with confidence.</p>
+            </div>
+            <div className={visual.heroAction}><PilotLink /><span>₹0 school pilot · ~3.5 hours/week</span></div>
+          </div>
+          <div className={visual.timeline}><BridgeTimeline /></div>
+          <p className={visual.transitionLine}>Strong in Class 10. Ready for Class 11 Physics.</p>
         </div>
-        <details className={`${styles.disclosure} ${styles.faqDisclosure}`}><summary><span>Practical questions about the pilot</span><span aria-hidden="true">+</span></summary><div className={styles.faqList}>{schoolFaqs.map(faq => <details key={faq.question} className={styles.faq}><summary>{faq.question}<span aria-hidden="true">+</span></summary><p>{faq.answer}</p></details>)}</div></details>
-      </div></section>
+      </section>
+
+      <section id="people" className={visual.section} aria-labelledby="people-title">
+        <div className={styles.container}><p className={visual.sectionFlag}><span role="img" aria-label="India">🇮🇳</span></p><h2 id="people-title">Guided by Indian scientists and engineers across the world,</h2><p className={visual.peopleIntro}>advancing Physics, AI, clean energy and everyday technology.</p>
+          <ExpertProfiles founderPortraitSrc={siteConfig.founderPortraitSrc} />
+        </div>
+      </section>
+
+      <section id="course" className={`${visual.section} ${visual.analytics}`} aria-labelledby="course-title">
+        <div className={`${styles.container} ${visual.imageSplit}`}>
+          <div><p className={styles.eyebrow}>A CLEARER VIEW FOR TEACHERS</p><h2 id="course-title">See where students<br />need your help.</h2><p>Students learn at their own pace. Diagnostic assessments reveal the foundations that need attention.</p>
+            <ul className={visual.checks}><li>Interactive lessons</li><li>Independent practice</li><li>Teacher diagnostics</li></ul>
+            <PilotLink compact />
+          </div>
+          <figure id="analytics"><img src={classroom.src} alt="Classroom illustration comparing a student's ready foundations with another student's gaps in vectors, linear equations and differentiation." loading="lazy" /><figcaption>Illustration of readiness insights · AI-generated classroom</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="curriculum" className={visual.section} aria-labelledby="curriculum-title">
+        <div className={styles.container}>
+          <p className={styles.eyebrow}>THE COURSE DESIGN</p>
+          <div className={visual.sectionHeading}><h2 id="curriculum-title">Connect the ideas.<br />Make the Physics click.</h2><p>Learn mathematical tools through physical questions, then use them across chapters.</p></div>
+          <div className={visual.connection} role="img" aria-label="Rocket momentum, oscillations and magnetic induction connect through rate of change">
+            <div className={visual.examples}>
+              <div><span className={visual.symbol}>↗</span><strong>A rocket losing mass</strong><small>Momentum</small></div>
+              <div><span className={visual.symbol}>∿</span><strong>An oscillating mass</strong><small>Motion</small></div>
+              <div><span className={visual.symbol}>⟳</span><strong>A rotating loop</strong><small>Magnetic induction</small></div>
+            </div>
+            <div className={visual.branches}><i /><i /><i /></div>
+            <div className={visual.shared}><span>One shared foundation</span><strong>Rate of change</strong><em>dy/dx</em></div>
+          </div>
+          <CourseOutline />
+          <details className={styles.disclosure}><summary>Try a question from Episode 1 <span aria-hidden="true">+</span></summary><EpisodePreview /></details>
+        </div>
+      </section>
+
+      <section id="pilot" className={`${visual.section} ${visual.pilot}`} aria-labelledby="pilot-title">
+        <div className={`${styles.container} ${visual.pilotInner}`}><div><p className={styles.eyebrow}>START WITH ONE CLASS</p><h2 id="pilot-title">A stronger start.<br />A ₹0 school pilot.</h2><p>One incoming Class 11 section. Four weeks. A web browser.</p><p>Teachers share access and review diagnostic results.</p></div><div id="conversation" className={visual.booking}><p>LET’S WALK THROUGH IT</p><strong>30 minutes with Rahul</strong><span>See the course and discuss your school’s timetable.</span><PilotLink /></div></div>
+      </section>
     </main>
     <footer className={styles.footer}><div className={`${styles.container} ${styles.footerInner}`}><span className={styles.brandText}>ican<span>learnit.</span></span><span>Learn. Practice. Grow.</span><a href="#top">Back to top ↑</a></div></footer>
   </div>;

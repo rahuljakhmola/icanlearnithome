@@ -1,7 +1,7 @@
 /** Public settings only. Never put credentials in this file. */
 export const siteConfig = {
   /** Paste the public Google Calendar appointment booking page URL here. */
-  bookingUrl: "",
+  bookingUrl: "https://calendar.app.google/as4cNzAuXeY4xHqX6",
   /** Optional real contact address. Leave blank until supplied. */
   contactEmail: "",
   /** Set once the final public route is confirmed. */
@@ -21,3 +21,7 @@ export function isHttpsUrl(value: string): boolean {
 }
 
 export const bookingUrl = isHttpsUrl(siteConfig.bookingUrl) ? siteConfig.bookingUrl : "";
+
+/** HTTPS endpoint that accepts the school walkthrough form as a POST. */
+const schoolWalkthroughEndpoint = process.env.NEXT_PUBLIC_SCHOOL_WALKTHROUGH_ENDPOINT ?? "";
+export const walkthroughFormUrl = isHttpsUrl(schoolWalkthroughEndpoint) ? schoolWalkthroughEndpoint : "";
